@@ -16,5 +16,7 @@ const whenMoving = (event) => {
     leftDiv.style.width = `${x}px`
 }
 
-wrapper.onmousemove = event => whenMoving(event)
-wrapper.ontouchmove = event => whenMoving(event)
+
+
+wrapper.onmousemove = event => whenMoving(event);
+wrapper.ontouchmove = event => whenMoving(event.touches[0]);
